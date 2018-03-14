@@ -22,14 +22,12 @@ public class Solution {
     }
     }
     public static class Graph {
-        private int nodes[];
         private ArrayList<Integer> edges[];
         private int distance[];
         private Queue<Pair> queue = new LinkedList<Pair>();
         
         
         public Graph(int size) {
-            nodes=new int[size];
             edges= new ArrayList[size];
             distance= new int[size];
             Arrays.fill(distance, -1);
